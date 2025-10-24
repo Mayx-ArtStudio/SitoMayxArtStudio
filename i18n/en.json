@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "about": "About",
+    "events": "Exhibitions / Events",
+    "contact": "Contact",
+    "blog": "News / Journal",
+    "newsletter": "Newsletter"
+  },
+  "hero": {
+    "headline": "Contemporary material art & light",
+    "sub": "Mayx-ArtStudio",
+    "cta": "View artworks"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "price": "Price",
+    "inquire": "Inquire"
+  },
+  "about": {
+    "title": "About",
+    "body": "I am MAYX. I work with glass, resins and matter to create artworks exploring light, transparency and the memory of objects."
+  },
+  "events": {
+    "title": "Exhibitions / Events",
+    "empty": "No events yet."
+  },
+  "contact": {
+    "title": "Contact",
+    "desc": "Write via the form. You will receive a reply by email.",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Message",
+    "send": "Send"
+  },
+  "blog": {
+    "title": "News / Journal",
+    "empty": "No posts yet."
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "lang": {
+    "it": "IT",
+    "en": "EN"
+  }
+}

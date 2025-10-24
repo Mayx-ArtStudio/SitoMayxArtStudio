@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "home": "Home",
+    "gallery": "Galleria Opere",
+    "about": "Chi sono",
+    "events": "Mostre / Eventi",
+    "contact": "Contatti",
+    "blog": "News / Diario",
+    "newsletter": "Newsletter"
+  },
+  "hero": {
+    "headline": "Arte contemporanea materica e luce",
+    "sub": "Mayx-ArtStudio",
+    "cta": "Scopri le opere"
+  },
+  "gallery": {
+    "title": "Galleria Opere",
+    "price": "Prezzo",
+    "inquire": "Richiedi informazioni"
+  },
+  "about": {
+    "title": "Chi sono",
+    "body": "Sono MAYX. Lavoro con vetro, resine e materia per creare opere che esplorano luce, trasparenze e memoria degli oggetti."
+  },
+  "events": {
+    "title": "Mostre / Eventi",
+    "empty": "Nessun evento al momento."
+  },
+  "contact": {
+    "title": "Contatti",
+    "desc": "Scrivimi tramite il modulo. Riceverai risposta via email.",
+    "name": "Il tuo nome",
+    "email": "La tua email",
+    "message": "Messaggio",
+    "send": "Invia"
+  },
+  "blog": {
+    "title": "News / Diario",
+    "empty": "Ancora nessun post."
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati"
+  },
+  "lang": {
+    "it": "IT",
+    "en": "EN"
+  }
+}

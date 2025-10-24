@@ -1,0 +1,93 @@
+[
+  {
+    "id": "work-1",
+    "image": "assets/images/opera_1.png",
+    "title": {
+      "it": "Senza titolo 1",
+      "en": "Untitled 1"
+    },
+    "description": {
+      "it": "Opera materica con vetro e resina.",
+      "en": "Material artwork with glass and resin."
+    },
+    "price": "Su richiesta / On request"
+  },
+  {
+    "id": "work-2",
+    "image": "assets/images/opera_2.png",
+    "title": {
+      "it": "Senza titolo 2",
+      "en": "Untitled 2"
+    },
+    "description": {
+      "it": "Opera materica con vetro e resina.",
+      "en": "Material artwork with glass and resin."
+    },
+    "price": "Su richiesta / On request"
+  },
+  {
+    "id": "work-3",
+    "image": "assets/images/opera_3.png",
+    "title": {
+      "it": "Senza titolo 3",
+      "en": "Untitled 3"
+    },
+    "description": {
+      "it": "Opera materica con vetro e resina.",
+      "en": "Material artwork with glass and resin."
+    },
+    "price": "Su richiesta / On request"
+  },
+  {
+    "id": "work-4",
+    "image": "assets/images/opera_4.png",
+    "title": {
+      "it": "Senza titolo 4",
+      "en": "Untitled 4"
+    },
+    "description": {
+      "it": "Opera materica con vetro e resina.",
+      "en": "Material artwork with glass and resin."
+    },
+    "price": "Su richiesta / On request"
+  },
+  {
+    "id": "work-5",
+    "image": "assets/images/opera_5.png",
+    "title": {
+      "it": "Senza titolo 5",
+      "en": "Untitled 5"
+    },
+    "description": {
+      "it": "Opera materica con vetro e resina.",
+      "en": "Material artwork with glass and resin."
+    },
+    "price": "Su richiesta / On request"
+  },
+  {
+    "id": "work-6",
+    "image": "assets/images/opera_6.jpeg",
+    "title": {
+      "it": "Senza titolo 6",
+      "en": "Untitled 6"
+    },
+    "description": {
+      "it": "Opera materica con vetro e resina.",
+      "en": "Material artwork with glass and resin."
+    },
+    "price": "Su richiesta / On request"
+  },
+  {
+    "id": "work-7",
+    "image": "assets/images/opera_7.png",
+    "title": {
+      "it": "Senza titolo 7",
+      "en": "Untitled 7"
+    },
+    "description": {
+      "it": "Opera materica con vetro e resina.",
+      "en": "Material artwork with glass and resin."
+    },
+    "price": "Su richiesta / On request"
+  }
+]

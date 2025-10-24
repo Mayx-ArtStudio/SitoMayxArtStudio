@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mayx-ArtStudio</title>
+  <meta name="description" content="Mayx-ArtStudio — Arte contemporanea materica e luce" />
+  <link rel="preload" href="data/artworks.json" as="fetch" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">MAYX Art Studio</div>
+    <nav>
+      <ul>
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery">Galleria Opere</a></li>
+        <li><a href="#about" data-i18n="nav.about">Chi sono</a></li>
+        <li><a href="#events" data-i18n="nav.events">Mostre / Eventi</a></li>
+        <li><a href="#blog" data-i18n="nav.blog">News / Diario</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contatti</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex; gap:8px">
+      <div class="theme-toggle"><button id="themeBtn" title="Tema">🌓</button></div>
+      <div class="lang-toggle">
+        <button id="itBtn" data-lang="it">IT</button>
+        <button id="enBtn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="container hero" id="home">
+    <div>
+      <h1 data-i18n="hero.headline">Arte contemporanea materica e luce</h1>
+      <p class="badge" data-i18n="hero.sub">Mayx-ArtStudio</p>
+      <div style="margin-top:18px">
+        <a href="#gallery" class="btn" data-i18n="hero.cta">Scopri le opere</a>
+      </div>
+    </div>
+    <div>
+      <img src="assets/images/opera_1.png" alt="Mayx Art Studio hero" />
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="container section" id="gallery">
+    <h2 data-i18n="gallery.title">Galleria Opere</h2>
+    <div id="galleryGrid" class="grid"></div>
+  </section>
+
+  <!-- About -->
+  <section class="container section" id="about">
+    <h2 data-i18n="about.title">Chi sono</h2>
+    <p data-i18n="about.body">Sono MAYX. Lavoro con vetro, resine e materia per creare opere che esplorano luce, trasparenze e memoria degli oggetti.</p>
+    <div style="margin-top:12px">
+      <a href="https://instagram.com/" target="_blank">Instagram</a> ·
+      <a href="https://tiktok.com/" target="_blank">TikTok</a> ·
+      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section class="container section" id="events">
+    <h2 data-i18n="events.title">Mostre / Eventi</h2>
+    <div id="eventsList" class="grid"></div>
+    <p id="eventsEmpty" class="badge" data-i18n="events.empty">Nessun evento al momento.</p>
+  </section>
+
+  <!-- Blog / News -->
+  <section class="container section" id="blog">
+    <h2 data-i18n="blog.title">News / Diario</h2>
+    <div id="postsList" class="grid"></div>
+    <p id="postsEmpty" class="badge" data-i18n="blog.empty">Ancora nessun post.</p>
+  </section>
+
+  <!-- Contact -->
+  <section class="container section" id="contact">
+    <h2 data-i18n="contact.title">Contatti</h2>
+    <p data-i18n="contact.desc">Scrivimi tramite il modulo. Riceverai risposta via email.</p>
+    <form id="contactForm" class="form">
+      <input type="text" id="name" name="name" placeholder="Nome" required aria-label="Nome" data-i18n-placeholder="contact.name" />
+      <input type="email" id="email" name="email" placeholder="Email" required aria-label="Email" data-i18n-placeholder="contact.email" />
+      <textarea id="message" name="message" placeholder="Messaggio" required aria-label="Messaggio" data-i18n-placeholder="contact.message"></textarea>
+      <button type="submit" class="btn" data-i18n="contact.send">Invia</button>
+      <p id="formStatus" class="badge" style="display:none"></p>
+    </form>
+    <p class="badge" style="margin-top:10px">Nota: il modulo usa EmailJS (gratuito). Inserirai le tue chiavi nel file <code>script.js</code>.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+    <small id="rights" data-i18n="footer.rights">Tutti i diritti riservati</small>
+    <div>
+      <a href="#home">Top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal" id="artModal" role="dialog" aria-modal="true" aria-label="Artwork details">
+  <button class="close" id="closeModal" aria-label="Chiudi">✕</button>
+  <div class="modal-content">
+    <img id="modalImg" alt="">
+    <div class="modal-body">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <p class="badge"><span data-i18n="gallery.price">Prezzo</span>: <span id="modalPrice"></span></p>
+      <div style="margin-top:12px">
+        <a id="inquireBtn" class="btn" target="_blank" rel="noopener" data-i18n="gallery.inquire">Richiedi informazioni</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<!-- EmailJS CDN (optional; user must configure keys) -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS with your User ID (replace 'YOUR_EMAILJS_PUBLIC_KEY')
+  // emailjs.init('YOUR_EMAILJS_PUBLIC_KEY');
+</script>
+</body>
+</html>
