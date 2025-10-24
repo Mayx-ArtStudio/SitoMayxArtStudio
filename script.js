@@ -47,7 +47,7 @@ function renderGallery(){
         <p style="opacity:.85">${item.description[state.lang] || item.description.it}</p>
         <div style="display:flex;gap:8px;margin-top:6px">
           <button class="btn secondary" data-id="${item.id}">Dettagli</button>
-          <a class="btn" href="mailto:YOUR_EMAIL_ADDRESS?subject=Richiesta%20opera%20${encodeURIComponent(item.title[state.lang] || item.title.it)}&body=Buongiorno%2C%20sono%20interessato%20all'opera%20%22${encodeURIComponent(item.title[state.lang] || item.title.it)}%22.%20Potete%20darmi%20informazioni%20su%20prezzo%2C%20pagamento%20e%20spedizione%3F" target="_blank">${state.dict.gallery.inquire}</a>
+          <a class="btn" href="mailto:mayx.artstudio@outlook.com?subject=Richiesta%20opera%20${encodeURIComponent(item.title[state.lang] || item.title.it)}&body=Buongiorno%2C%20sono%20interessato%20all'opera%20%22${encodeURIComponent(item.title[state.lang] || item.title.it)}%22.%20Potete%20darmi%20informazioni%20su%20prezzo%2C%20pagamento%20e%20spedizione%3F" target="_blank">${state.dict.gallery.inquire}</a>
         </div>
       </div>
     `;
@@ -64,7 +64,7 @@ function openModal(item){
   document.getElementById('modalDesc').textContent = item.description[state.lang] || item.description.it;
   document.getElementById('modalPrice').textContent = item.price;
   const titleEnc = encodeURIComponent(item.title[state.lang] || item.title.it);
-  document.getElementById('inquireBtn').href = `mailto:YOUR_EMAIL_ADDRESS?subject=Richiesta%20opera%20${titleEnc}&body=Buongiorno%2C%20sono%20interessato%20all'opera%20%22${titleEnc}%22.%20Potete%20darmi%20informazioni%20su%20prezzo%2C%20pagamento%20e%20spedizione%3F`;
+  document.getElementById('inquireBtn').href = `mailto:mayx.artstudio@outlook.com?subject=Richiesta%20opera%20${titleEnc}&body=Buongiorno%2C%20sono%20interessato%20all'opera%20%22${titleEnc}%22.%20Potete%20darmi%20informazioni%20su%20prezzo%2C%20pagamento%20e%20spedizione%3F`;
   modal.classList.add('open');
 }
 document.getElementById('closeModal').addEventListener('click', ()=>document.getElementById('artModal').classList.remove('open'));
